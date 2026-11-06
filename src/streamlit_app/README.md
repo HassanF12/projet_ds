@@ -25,6 +25,7 @@ Here is a template to start a new page:
 
 ```python
 """Streamlit page."""
+
 import streamlit as st
 
 from src.streamlit_app.utils.set_page_config import set_page_config
