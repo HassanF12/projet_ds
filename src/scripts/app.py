@@ -1,13 +1,16 @@
-from pathlib import Path
+"""Streamlit app for the electric skate assistant."""
+
 import sys
+from pathlib import Path
 
 # 1. Résolution du chemin racine
 root_dir = Path(__file__).resolve().parent.parent.parent
 if str(root_dir) not in sys.path:
     sys.path.insert(0, str(root_dir))
 
-import streamlit as st
-from src.rag.assistant import RagAssistant
+import streamlit as st  # noqa: E402
+
+from src.rag.assistant import RagAssistant  # noqa: E402
 
 st.set_page_config(
     page_title="Electric Skate Assistant",
@@ -21,6 +24,7 @@ st.caption("Posez vos questions sur les modèles, vitesses, poids et autonomies.
 # 2. Chargement de l'assistant en cache unique
 @st.cache_resource
 def get_assistant() -> RagAssistant:
+    """Return a cached assistant instance."""
     return RagAssistant()
 
 
@@ -43,9 +47,11 @@ if user_input := st.chat_input("Votre message..."):
         st.markdown(user_input)
 
     # B. Générer, afficher et mémoriser la réponse de l'assistant
-    with st.chat_message("assistant"):
-        with st.spinner("Recherche dans les spécifications..."):
-            response = assistant.query(user_input)
-            st.markdown(response)
+    with (
+        st.chat_message("assistant"),
+        st.spinner("Recherche dans les spécifications..."),
+    ):
+        response = assistant.query(user_input)
+        st.markdown(response)
 
     st.session_state.messages.append({"role": "assistant", "content": response})

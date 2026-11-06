@@ -2,7 +2,7 @@
 name = "electricskate"
 version = "0.1.0"
 description = "Customer service chatbot for an electric skate company powered by RAG"
-authors = ["Hassan <hassan.fayad@theodo.com>"]
+authors = [{ name = "Hassan", email = "hassan.fayad@theodo.com" }]
 readme = "README.md"
 requires-python = "==3.11.6"
 dependencies = [

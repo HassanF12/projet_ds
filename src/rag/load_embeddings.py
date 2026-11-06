@@ -1,3 +1,5 @@
+"""Load embeddings into Qdrant."""
+
 import uuid
 from pathlib import Path
 from typing import Any

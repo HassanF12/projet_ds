@@ -1,10 +1,12 @@
+"""RAG customer service assistant."""
+
 from ollama import Client
 from qdrant_client import QdrantClient
 from sentence_transformers import SentenceTransformer
 
 DEFAULT_COLLECTION_NAME = "electric_skates"
 TOP_VECTOR_SEARCH = 3
-#OLLAMA_MODEL = "gemma:2b"
+# OLLAMA_MODEL = "gemma:2b"
 OLLAMA_MODEL = "qwen2.5:3b"
 MAX_HISTORY = 7
 
@@ -26,7 +28,9 @@ class RagAssistant:
             grpc_port=6334,
             prefer_grpc=True,
         )
-        self.embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+        self.embedding_model = SentenceTransformer(
+            "sentence-transformers/all-MiniLM-L6-v2"
+        )
         self.collection_name = collection_name
         self.top_k_vectors = top_k_vectors
         self.model = model
@@ -57,7 +61,9 @@ class RagAssistant:
     def generate_answer(self, query: str, context_documents: list[str]) -> str:
         """Generate an answer to a question using Ollama with retrieved context."""
         if not context_documents:
-            return "I could not find relevant information in the electric skate documents."
+            return (
+                "I could not find relevant information in the electric skate documents."
+            )
 
         context = "\n\n---\n\n".join(context_documents)
 
@@ -87,7 +93,9 @@ Only recommend products that match what the customer asked for. Never recommend 
                 role = msg["role"].capitalize()
                 content = msg["content"]
                 history_lines.append(f"{role}: {content}")
-            history_block = "Previous conversation:\n" + "\n".join(history_lines) + "\n\n---\n\n"
+            history_block = (
+                "Previous conversation:\n" + "\n".join(history_lines) + "\n\n---\n\n"
+            )
 
         prompt = f"""{system_instruction}
 
@@ -111,7 +119,10 @@ Then answer the customer with the board name and specific reasons."""
             stream=False,
         )
 
-        return response.get("response", "I could not generate an answer.") or "I could not generate an answer."
+        return (
+            response.get("response", "I could not generate an answer.")
+            or "I could not generate an answer."
+        )
 
     def query(self, query: str) -> str:
         """Query the assistant."""
@@ -129,7 +140,7 @@ Then answer the customer with the board name and specific reasons."""
 
         # 5 & 6. Keep only the last 7 exchanges (14 messages)
         max_exchanges = 7
-        self.conversation_history = self.conversation_history[-(max_exchanges * 2):]
+        self.conversation_history = self.conversation_history[-(max_exchanges * 2) :]
 
         # 7. Return the generated answer
         return answer

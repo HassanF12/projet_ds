@@ -1,6 +1,6 @@
 """Unit tests for run_assistant script."""
 
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 
 
 def test_quit_exits_the_assistant():

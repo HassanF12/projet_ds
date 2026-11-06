@@ -1,3 +1,5 @@
+"""Create the Qdrant collection."""
+
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams
 from sentence_transformers import SentenceTransformer
@@ -9,6 +11,7 @@ EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 def main(
     collection_name: str = COLLECTION_NAME,
     embedding_model_name: str = EMBEDDING_MODEL_NAME,
+    *,
     recreate: bool = False,
 ) -> None:
     """Create a Qdrant collection for electric skate product chunks.
@@ -41,10 +44,7 @@ def main(
         ),
     )
 
-    print(
-        f"Created collection '{collection_name}' "
-        f"with vector size {vector_size}."
-    )
+    print(f"Created collection '{collection_name}' with vector size {vector_size}.")
 
 
 if __name__ == "__main__":
