@@ -136,3 +136,4 @@ For more details on the API routes, check the automatically generated [swagger](
 
 The project includes a Streamlit app.
 See its documentation in the [specific README](src/streamlit_app/README.md).
+Ceci est un projet de chatbot customer service pour des skates électriques avec du RAG
