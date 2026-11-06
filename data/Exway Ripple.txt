@@ -1,0 +1,36 @@
+2024-08-30
+Model: Exway Ripple 
+
+Performance & Power
+Top Speed: Estimated around 30-40 km/h (18-25 mph)
+Range: Expected 15-25 km (9-15 miles), depending on riding conditions
+Motor Type: Likely Hub Motor for smooth and quiet operation
+Max Hill Climb: Estimated 15-20% incline
+Acceleration: Designed for urban commuting and beginner-friendly riding
+
+Battery & Charging
+Battery Capacity: Expected 180-250Wh
+Charging Time: Around 2-3 hours with a standard charger
+Swappable Battery: Possibly available for extended range
+
+Build & Design
+Deck Material: Likely a flexy composite deck for comfort
+Weight: Estimated 6-8 kg (13-17 lbs) for portability
+Wheel Size: 85mm standard wheels, possibly compatible with larger wheels
+Water Resistance: IP55 rating expected (resistant to dust and water splashes)
+
+Control & Features
+Remote Control: Bluetooth remote with real-time ride stats
+App Integration: Supports Exway App for ride customization
+Drive System: Hub Drive for low maintenance and a quiet ride
+Braking System: Regenerative braking
+
+Positive Expectations
+Lightweight & Portable: Ideal for urban commuters and last-mile transportation.
+Beginner-Friendly: Likely smooth acceleration and braking, great for new riders.
+Quiet Hub Motor: Provides a stealthy ride with low maintenance.
+Affordable Entry-Level Board: Expected to be one of Exway’s most budget-friendly options.
+Potential Downsides 
+Lower Top Speed: Compared to high-performance models, speed may be limited.
+Shorter Range: Not ideal for long-distance rides unless extra batteries are available.
+Not Built for Rough Terrain: Small wheels and a lightweight design may struggle on uneven roads.

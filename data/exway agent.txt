@@ -1,0 +1,39 @@
+2026-10-13
+Model: Exway agent
+
+Performance & Power
+Top Speed: Expected around 50-60 km/h (31-37 mph)
+Range: Likely 40-60 km (25-37 miles) depending on battery and riding conditions
+Motor Type: 4WD System (Quad Motors for extra power & torque)
+Max Hill Climb: 35-40% incline
+Acceleration: High torque for fast takeoff
+
+Battery & Charging
+Battery Capacity: Likely around 700Wh or more
+Charging Time: Likely 3-5 hours (with fast charging options)
+Swappable Battery: Possibly available
+
+Build & Design
+Deck Material: Expected to be carbon fiber or composite for durability
+Weight: Likely heavier due to 4WD system (~12-15kg or more)
+Wheel Size: Likely 150mm-160mm all-terrain pneumatic wheels
+Water Resistance: Some level of dust & water resistance (IP55 or higher expected)
+
+Control & Features
+Remote Control: Bluetooth remote with real-time stats
+App Integration: Likely supports customizable ride settings via Exway App
+Drive System: 4WD (Quad Motor Drive) for extreme torque and power
+Braking System: Regenerative braking
+
+Positive Expectations 
+Powerful 4WD Performance: Should be one of the most powerful e-skateboards from Exway.
+All-Terrain Capability: Great for off-road and rough terrains with pneumatic wheels.
+High Speed & Torque: Expected to have excellent acceleration and steep hill climbing ability.
+Premium Build Quality: Exway's track record suggests a well-built, high-quality design.
+App Integration:  offers advanced tuning and customization.
+
+Potential Downsides 
+Expensive: 4WD systems generally cost more than standard 2WD models.
+Heavy: Quad motors and a large battery mean it won’t be easy to carry.
+Battery Drain in 4WD Mode: Full-power mode may reduce range significantly.
+Limited Portability: May not be ideal for commuting if you need to carry it often.
