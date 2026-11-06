@@ -1,0 +1,20 @@
+{
+  "generator-sicarator": {
+    "promptValues": {
+      "authorName": "Hassan",
+      "authorEmail": "hassan.fayad@theodo.com",
+      "ci": ".github",
+      "includeApi": true,
+      "apiInfrastructure": null,
+      "includeDvc": true,
+      "dvcRemoteType": "gs",
+      "includeStreamlit": true,
+      "includeDvcStreamlitUtils": true,
+      "includeDvcStreamlitExample": true
+    },
+    "projectName": "electric_skate",
+    "projectSlug": "electricskate",
+    "projectDescription": "Customer service chatbot for an electric skate company powered by RAG",
+    "dvcRemoteBucketName": "skate"
+  }
+}
