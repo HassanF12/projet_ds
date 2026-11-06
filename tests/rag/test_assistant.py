@@ -3,7 +3,7 @@
 from unittest.mock import patch
 
 
-def test_quit_exits_the_assistant():
+def test_quit_exits_the_assistant() -> None:
     with (
         patch("src.rag.assistant.Client"),
         patch("src.rag.assistant.QdrantClient"),

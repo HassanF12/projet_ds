@@ -28,6 +28,8 @@ def main(
 
     embedding_model = SentenceTransformer(embedding_model_name)
     vector_size = embedding_model.get_sentence_embedding_dimension()
+    if vector_size is None:
+        raise ValueError(f"Cannot infer vector size for {embedding_model_name}.")
 
     if qdrant_client.collection_exists(collection_name):
         if recreate:

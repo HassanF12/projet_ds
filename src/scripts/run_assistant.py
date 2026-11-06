@@ -9,7 +9,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from src.rag.assistant import RagAssistant
 
 
-def main():
+def main() -> None:
     """Run the RAG assistant in interactive mode."""
     print("Initializing RAG Assistant...")
     assistant = RagAssistant()

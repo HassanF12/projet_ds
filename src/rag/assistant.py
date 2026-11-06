@@ -34,7 +34,7 @@ class RagAssistant:
         self.collection_name = collection_name
         self.top_k_vectors = top_k_vectors
         self.model = model
-        self.conversation_history: list[dict] = []
+        self.conversation_history: list[dict[str, str]] = []
 
     def retrieve(self, query: str) -> list[str]:
         """Retrieve the top k documents related to the given question from Qdrant."""
